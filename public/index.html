@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Comfy House</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="section-title">
+            <a href="contact.html" style="color: black; font-size: 20px;">Contact Us</a>
+            <a href="aboutUs.html" style="color: black; font-size: 20px; margin-left: 30px;">About Us</a>
+          </i>
+        </span>
+
+            <img src="./images/logo.svg" alt="store logo" />
+            <div class="cart-btn">
+                <span class="nav-icon"> 
+            <i class="fas fa-cart-plus"></i>
+          </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- hero -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">furniture collection</h1>
+            <a href="#products">
+                <button class="banner-btn">shop now</button>
+            </a>
+        </div>
+    </header>
+    <!-- end of hero -->
+
+    <!-- products -->
+    <section class="products" id='products'>
+        <div class="section-title">
+            <h2>our products</h2>
+        </div>
+        <div class="products-center">
+            <!-- single product -->
+            <!-- <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/product-1.jpeg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to bag
+            </button>
+          </div>
+          <h3>queen bed</h3>
+          <h4>$16</h4>
+        </article> -->
+            <!-- end of single product -->
+        </div>
+    </section>
+    <!-- end of products -->
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart"><i class="far fa-window-close"></i></span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!-- cart item -->
+                <!-- <div class="cart-item">
+            <img src="./images/product-1.jpeg" alt="product" />
+            <div>
+              <h4>queen bed</h4>
+              <h5>$9.00</h5>
+              <span class="remove-item">remove</span>
+            </div>
+            <div>
+              <i class="fas fa-chevron-up"></i>
+              <p class="item-amount">
+                1
+              </p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div> -->
+                <!-- cart item -->
+            </div>
+            <div class="cart-footer">
+                <h3>your total : Rs. <span class="cart-total">0</span></h3>
+                <button type="submit" action='login.html' class="checkout-cart banner-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of cart -->
+    <!-- contentful -->
+
+    <!--  javascript -->
+    <script type="module" src="app_local.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCzX8sKSTnJXEMCw_Q3MzJviP7Xr4U6kEI",
+            authDomain: "furniture-store-c3d57.firebaseapp.com",
+            projectId: "furniture-store-c3d57",
+            storageBucket: "furniture-store-c3d57.appspot.com",
+            messagingSenderId: "622999585649",
+            appId: "1:622999585649:web:887e695201c76e57ce2cd0",
+            measurementId: "G-VXE5ZWL957"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
+</html>

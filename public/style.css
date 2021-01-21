@@ -1,0 +1,299 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800";
+body {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #777
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+img {
+    max-width: 100%
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none
+}
+
+a:focus,
+a:hover {
+    text-decoration: none
+}
+
+i,
+span,
+a {
+    display: inline-block
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin: 0
+}
+
+h1 {
+    font-size: 92px
+}
+
+h2 {
+    font-size: 35px
+}
+
+h3 {
+    font-size: 32px
+}
+
+h4 {
+    font-size: 24px
+}
+
+h5 {
+    font-size: 20px
+}
+
+h6 {
+    font-size: 16px
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #777;
+    margin: 0
+}
+
+.bg_cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #fe7865;
+    padding: 0 35px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    background-color: #fe7865
+}
+
+@media(max-width:767px) {
+    .main-btn {
+        font-size: 14px;
+        padding: 0 25px;
+        line-height: 43px
+    }
+}
+
+.main-btn i {
+    font-size: 12px;
+    margin-left: 5px
+}
+
+.main-btn:hover {
+    background-color: #fff;
+    color: #fe7865;
+    border-color: #fe7865
+}
+
+.main-btn.main-btn-2 {
+    background-color: #fff;
+    color: #fe7865;
+    border-color: #fe7865
+}
+
+.main-btn.main-btn-2:hover {
+    background-color: #fe7865;
+    border-color: #fe7865;
+    color: #fff
+}
+
+.section-title h5 {
+    position: relative;
+    font-size: 18px;
+    color: #fe7865;
+    font-weight: 500;
+    padding-left: 110px
+}
+
+.section-title h5::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background-color: #fe7865;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.section-title .title {
+    font-size: 32px
+}
+
+@media(max-width:767px) {
+    .section-title .title {
+        font-size: 26px
+    }
+}
+
+.contact-area .contact-title .title {
+    font-size: 60px;
+    padding-top: 50px;
+    color: #333
+}
+
+@media(max-width:767px) {
+    .contact-area .contact-title .title {
+        font-size: 35px
+    }
+}
+
+@media(max-width:767px) {
+    .contact-area {
+        padding-top: 70px
+    }
+}
+
+.contact-box {
+    padding: 10px 40px 40px;
+    -webkit-box-shadow: 0 0 40px 0 rgba(156, 156, 156, .25);
+    -moz-box-shadow: 0 0 40px 0 rgba(156, 156, 156, .25);
+    box-shadow: 0 0 40px 0 rgba(156, 156, 156, .25);
+    background-color: #fff
+}
+
+@media(max-width:767px) {
+    .contact-box {
+        padding: 0 20px 20px
+    }
+}
+
+.contact-info .info-title {
+    font-size: 26px;
+    padding-bottom: 5px
+}
+
+.single-info {
+    position: relative
+}
+
+.single-info .info-icon {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.single-info .info-icon i {
+    font-size: 20px;
+    color: #fe7865
+}
+
+.single-info .info-content {
+    padding-left: 40px
+}
+
+.single-info .info-content p {
+    font-size: 18px;
+    font-weight: 500
+}
+
+@media(max-width:767px) {
+    .single-info .info-content p {
+        font-size: 16px
+    }
+}
+
+.form-group {
+    margin: 0
+}
+
+.single-form {
+    margin-top: 30px
+}
+
+.single-form textarea,
+.single-form input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    background-color: #f7f7ff;
+    padding: 0 20px
+}
+
+.single-form textarea {
+    height: 155px;
+    padding-top: 15px;
+    resize: none
+}
+
+.single-form textarea::placeholder,
+.single-form input::placeholder {
+    opacity: 1;
+    color: #777
+}
+
+p.form-message.success,
+p.form-message.error {
+    font-size: 16px;
+    color: #333;
+    background: #ddd;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-top: 15px
+}
+
+p.form-message.error {
+    color: red
+}
+
+.list-unstyled li {
+    font-size: 13px;
+    margin-left: 2px;
+    margin-top: 5px;
+    color: red
+}

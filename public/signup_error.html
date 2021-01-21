@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Login </title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 login-card">
+                    <div class="row">
+                        <div class="col-md-5 detail-part">
+                        </div>
+                        <div class="col-md-7 logn-part">
+                            <div class="row">
+                                <div class="col-lg-10 col-md-12 mx-auto">
+                                    <div class="logo-cover">
+                                        <img src="images\logo.svg" alt="">
+                                    </div>
+                                    <div class="form-cover">
+                                        <h6 style='color:red;'>Somwthing went wrong, please try again!</h6>
+                                        <h4>Create Account</h4>
+                                        <form action="/signup" method="POST">
+                                            <input placeholder="Enter email" id='email' name='email' type="text" class="form-control" required>
+                                            <input Placeholder="Enter password" id='password' name='password' type="password" class="form-control" required>
+                                            <input placeholder="Enter Address" type="text" id='address' name='address' class="form-control" required>
+                                            <div class="row form-footer">
+                                                <div class="col-md-6 forget-paswd">
+                                                </div>
+                                                <div class="col-md-6 button-div">
+                                                    <button type="submit" class="btn btn-primary">Sign up</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</html>
+<div class="login-form">
+    <h1>Create Account</h1>
+    <form action="/signup" method="POST">
+        <input type="text" name="email" placeholder="Email" id="email" required>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+        <input type="text" name="address" placeholder="Address" id="address" required>
+        <button id='signup_button' type="submit">Signup</button>
+    </form>
+</div>
+</body>
+
+</html>
